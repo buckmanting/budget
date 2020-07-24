@@ -40,10 +40,6 @@
     color: white;
 }
 
-.spend-form--extra-margin {
-    padding: 1em;
-}
-
 .spend-button--no-style {
     appearance: none;
     border: #323265 dashed;
