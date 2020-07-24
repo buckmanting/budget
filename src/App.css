@@ -40,6 +40,17 @@
     color: white;
 }
 
+.form-input {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(12px + 1vmin);
+    margin: 0 1rem;
+    color: #282c34;
+    border: aliceblue solid 1px;
+}
+
 .spend-button--no-style {
     appearance: none;
     border: #323265 dashed;

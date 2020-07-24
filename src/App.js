@@ -38,6 +38,7 @@ function App() {
                     type="number"
                     id="spend"
                     value={spend}
+                    className="form-input"
                     onChange={e => setSpend(e.target.value)}
                 />
                 <input type="submit" className="spend-button--no-style" value="Add"/>
