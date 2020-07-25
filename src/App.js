@@ -67,7 +67,7 @@ function App() {
                         aria-label="Spent"
                         value={spend}
                         type="number"
-                        min="0.01"
+                        min="-25000.00"
                         step="0.01"
                         onChange={e => setSpend(e.target.value)}
                     />
