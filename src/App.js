@@ -65,9 +65,10 @@ function App() {
                     <FormControl
                         placeholder="£10"
                         aria-label="Spent"
-                        aria-describedby="basic-addon2"
                         value={spend}
                         type="number"
+                        min="0.01"
+                        step="0.01"
                         onChange={e => setSpend(e.target.value)}
                     />
                     <InputGroup.Append>
@@ -111,7 +112,10 @@ function App() {
                                 <Form.Control type="number"
                                               value={budgetLimit}
                                               onChange={(e) => setBudgetLimit(e.target.value)}
-                                              placeholder="100" required/>
+                                              min="0.01"
+                                              step="0.01"
+                                              placeholder="100"
+                                              required/>
                                 <Form.Control.Feedback type="invalid">
                                     Please set a budget.
                                 </Form.Control.Feedback>
