@@ -12,8 +12,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 import useLocalStorage from './store/localStorageStore';
 
 function App() {
-    const [budget, setBudget] = useLocalStorage('budget', {limit: 0, numberOfWeeks: 0});
-    const [remaining, setRemaining] = useLocalStorage('remaining', 0);
+    const [budget, setBudget] = useLocalStorage('budget', {limit: 0, numberOfWeeks: 1});
+    const [remaining, setRemaining] = useLocalStorage('remaining', budget.limit);
     const [spend, setSpend] = useLocalStorage('spend', undefined);
     const [spendHistory, setSpendHistory] = useLocalStorage('spendHistory', []);
 
