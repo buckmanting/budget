@@ -70,6 +70,7 @@ function App() {
                         min="-25000.00"
                         step="0.01"
                         onChange={e => setSpend(e.target.value)}
+                        required
                     />
                     <InputGroup.Append>
                         <Button type="submit" variant="outline-primary">Add</Button>
