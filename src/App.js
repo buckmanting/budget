@@ -13,8 +13,8 @@ import useLocalStorage from './store/localStorageStore';
 
 function App() {
     const [budget, setBudget] = useLocalStorage('budget', {limit: 0, numberOfWeeks: 1});
-    const [remaining, setRemaining] = useLocalStorage('remaining', budget.limit);
-    const [spend, setSpend] = useLocalStorage('spend', undefined);
+    const [remaining, setRemaining] = useState(budget.limit);
+    const [spend, setSpend] = useState(undefined);
     const [spendHistory, setSpendHistory] = useLocalStorage('spendHistory', []);
 
     const [showSettings, setShowSettings] = useState(false);
@@ -101,7 +101,7 @@ function App() {
                 <Modal.Header closeButton>
                     <Modal.Title>Configure Budget</Modal.Title>
                 </Modal.Header>
-
+                
                 <Form onSubmit={handleBudgetSubmit}>
                     <Modal.Body>
                         <Form.Group controlId="formBasicEmail">
